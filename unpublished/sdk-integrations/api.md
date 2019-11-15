@@ -13,7 +13,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/url \
+        curl -XPOST https://api.branch.io/v1/url  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "channel": "facebook",
@@ -56,7 +56,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/url/bulk/key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt \
+        curl -XPOST https://api.branch.io/v1/url/bulk/key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt  -H "Content-Type: application/json" \
           -d '[
             {
               "channel": "facebook",
@@ -190,7 +190,7 @@
     - *Request*
 
           ```bash
-          curl -XPUT 'https://api.branch.io/v1/url?url=https%3A%2F%2Fexample.app.link%2F5IULiLcpqF' \
+          curl -XPUT 'https://api.branch.io/v1/url?url=https%3A%2F%2Fexample.app.link%2F5IULiLcpqF'  -H "Content-Type: application/json" \
             -d '{
             "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
             "branch_secret": "secret_live_RrrsLqpzVcoVWf5t4ncQVpzlg2pRpGH9",
@@ -310,7 +310,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/event \
+        curl -XPOST https://api.branch.io/v1/event  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "identity": "bob",
@@ -342,7 +342,7 @@
     - *Request*
 
         ```bash
-        curl -X POST https://api.branch.io/v1/event \
+        curl -X POST https://api.branch.io/v1/event  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "identity": "222",
@@ -425,7 +425,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/url \
+        curl -XPOST https://api.branch.io/v1/url  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "channel": "facebook",
@@ -446,7 +446,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/credits \
+        curl -XPOST https://api.branch.io/v1/credits  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "branch_secret": "secret_live_RrrsLqpzVcoVWf5t4ncQVpzlg2pRpGH9",
@@ -479,7 +479,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/redeem \
+        curl -XPOST https://api.branch.io/v1/redeem  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "branch_secret": "secret_live_RrrsLqpzVcoVWf5t4ncQVpzlg2pRpGH9",
@@ -600,7 +600,7 @@
     - *Request*
 
         ```bash
-        curl -X POST https://api.branch.io/v1/reconcile \
+        curl -X POST https://api.branch.io/v1/reconcile  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "branch_secret": "secret_live_RrrsLqpzVcoVWf5t4ncQVpzlg2pRpGH9",
@@ -629,7 +629,7 @@
     - *Request*
 
         ```bash
-        curl -XPOST https://api.branch.io/v1/eventresponse \
+        curl -XPOST https://api.branch.io/v1/eventresponse  -H "Content-Type: application/json" \
           -d '{
           "branch_key": "key_live_kaFuWw8WvY7yn1d9yYiP8gokwqjV0Swt",
           "branch_secret": "secret_live_RrrsLqpzVcoVWf5t4ncQVpzlg2pRpGH9",
@@ -690,7 +690,7 @@
     - *Request*
 
         ```js
-        curl -XPOST https://api.branch.io/v1/app \
+        curl -XPOST https://api.branch.io/v1/app  -H "Content-Type: application/json" \
           -d '{
           "user_id": "YOUR_USER_ID",
           "app_name": "eneff_test_3",
@@ -889,7 +889,7 @@
     - *Request*
 
         ```js
-        curl -XPUT https://api.branch.io/v1/app/key_live_icCccJIpd7GlYY5oOmoEtpafuDiuyXhT \
+        curl -XPUT https://api.branch.io/v1/app/key_live_icCccJIpd7GlYY5oOmoEtpafuDiuyXhT  -H "Content-Type: application/json" \
           -d '{
           "branch_secret": "secret_live_D3sN7UDL27glpNKZfGPt6BlmKD9txUBp",
           "dev_email": "YOUR_EMAIL",
